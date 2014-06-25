@@ -7,7 +7,7 @@ var htmlreplace = require('gulp-html-replace');
 var clean = require('gulp-clean');
 var changed = require('gulp-changed');
 var karma = require('gulp-karma');
-var requireConfigModule = require('./require-config');
+var requireConfigModule = require('./app/require.config');
 
 var requireConfig = requireConfigModule.requireConfig;
 var buildingProd = false;
@@ -84,7 +84,7 @@ gulp.task('watch', function(){
 	gulp.watch('test/**/*Tests.js', ['test-run']);
 });
 
-gulp.task('postCleanSteps', ['copySourceFilesToBuildFolder', 'compileJS', 'compileLess', 'updatePathsInIndex.Htmll']);
+gulp.task('postCleanSteps', ['copySourceFilesToBuildFolder', 'compileJS', 'compileLess', 'updatePathsInIndex.Html']);
 
 gulp.task('build', ['clean'], function(){
 	gulp.run('test-run');

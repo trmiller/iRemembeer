@@ -1,18 +1,18 @@
 var requireConfig = {
 	baseUrl: "app/js",
 	paths: {
-	  jquery: '../../lib/jQuery/jquery-2.1.0',
-	  underscore: '../../lib/underscore/underscore',
-	  angular: '../../lib/angular/angular',
-	  angularRoute: '../../lib/angular/angular-route',
-	  angularAnimate: '../../angular/angular-animate',
-	  requirelib: '../../lib/requirejs/require',
-	  bootstrap: '../../lib/bootstrap/dist/js/bootstrap',
-	  uiBootstrap: '../../lib/ui-bootstrap/ui-bootstrap-tpls-0.10.0',
-	  ngStrap: '../../lib/angular-strap/angular-strap',
-	  ngStrapTpl: '../../lib/angular-strap/angular-strap.tpl',
-	  loadingBar: '../../lib/angular-loading-bar/loading-bar',
-	  toaster: '../../lib/angularjs-toaster/toaster'
+	  jquery: '../lib/jQuery/dist/jQuery',
+	  underscore: '../lib/underscore/underscore',
+	  angular: '../lib/angular/angular',
+	  angularRoute: '../lib/angular-route/angular-route',
+	  angularAnimate: './angular/angular-animate',
+	  requirelib: '../lib/requirejs/require',
+	  bootstrap: '../lib/bootstrap/dist/js/bootstrap',
+	  uiBootstrap: '../lib/angular-bootstrap/ui-bootstrap-tpls',
+	  ngStrap: '../lib/angular-strap/dist/angular-strap',
+	  ngStrapTpl: '../lib/angular-strap/dist/angular-strap.tpl',
+	  loadingBar: '../lib/angular-loading-bar/build/loading-bar',
+	  toaster: '../lib/angularjs-toaster/toaster'
 	},
 	shim: {
 		jquery: {exports: ['jQuery', '$']},
