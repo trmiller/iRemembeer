@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="all" href="css/main.css"/>
+  <title>iRemembeer</title>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+  </ul>
+
+  <div class="container" data-ng-view></div>
+  <toaster-container toaster-options="('position-class': toaster-bottom-right')"></toaster-container>
+  <div>iRemembeer<span app-version></span>
+  <script src="js/requirelib.js" data-main="js/main.js"></script>
+</body>
+</html>
