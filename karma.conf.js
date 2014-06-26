@@ -1,4 +1,4 @@
-modle.exports = function(config){
+module.exports = function(config){
 	config.set({
 		basePath: '',
 		frameworks: ['jasmine', 'requirejs'],
@@ -13,6 +13,8 @@ modle.exports = function(config){
 		exclude: [
 			'app/js/main.js'
 		],
+
+		showStack: true,
 
 		reporters: ['dots'],
 
