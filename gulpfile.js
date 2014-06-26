@@ -32,13 +32,13 @@ gulp.task('compileLess', function(){
 		compress: buildingProd
 	};
 
-	gulp.src(['src/css/main.less'])
+	gulp.src(['app/styles/main.less'])
 		.pipe(less(lessConfig))
 		.pipe(gulp.dest('build/css'));
 });
 
 gulp.task('updatePathsInIndex.Html', function(){
-	var stream = gulp.src('src/index.html');
+	var stream = gulp.src('app/index.html');
 	if(buildingProd){
 		stream = stream.pipe(htmlreplace({
 			js: {
@@ -54,7 +54,7 @@ gulp.task('clean', function(){
 });
 
 gulp.task('copySourceFilesToBuildFolder', function(){
-	gulp.src('src/views/**/*').pipe(gulp.dest('build/views'));
+	gulp.src('app/views/**/*').pipe(gulp.dest('build/views'));
 });
 
 gulp.task('test-run', function(){
@@ -76,7 +76,7 @@ gulp.task('copyJSFilesToBuildFolder', function(){
 });
 
 gulp.task('watch', function(){
-	gulp.watch('app/css/**/*.less', ['compileLess']);
+	gulp.watch('app/styles/**/*.less', ['compileLess']);
 	gulp.watch('app/index.htmls', ['updatePathsInIndex.Html']);
 	gulp.watch('app/views/**/*', ['copySourceFilesToBuildFolder']);
 	gulp.watch('app/js/**/*.html', ['copySourceFilesToBuildFolder']);

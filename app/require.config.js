@@ -5,7 +5,7 @@ var requireConfig = {
 	  underscore: '../lib/underscore/underscore',
 	  angular: '../lib/angular/angular',
 	  angularRoute: '../lib/angular-route/angular-route',
-	  angularAnimate: './angular/angular-animate',
+	  angularAnimate: '../lib/angular-animate/angular-animate',
 	  requirelib: '../lib/requirejs/require',
 	  bootstrap: '../lib/bootstrap/dist/js/bootstrap',
 	  uiBootstrap: '../lib/angular-bootstrap/ui-bootstrap-tpls',
@@ -45,7 +45,7 @@ var requireConfig = {
 		}
 	},
 	optimize: 'none',
-	packages: ["controllers", "directives", "filters", "services"],
+	packages: ["controllers", "filters", "services"],
 	include: ["requirelib"],
 	priority: [
 		"angular"

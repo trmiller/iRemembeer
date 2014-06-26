@@ -11,7 +11,7 @@ modle.exports = function(config){
 		],
 
 		exclude: [
-			'src/js/main.js'
+			'app/js/main.js'
 		],
 
 		reporters: ['dots'],

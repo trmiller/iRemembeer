@@ -11,7 +11,7 @@ for(var file in window.__karma__.files){
 var paths = requireConfig.paths;
 var shim = requireConfig.shim;
 
-paths.angularMocks = '../../lib/angular-mocks/angular-mocks';
+paths.angularMocks = './app/lib/angular-mocks/angular-mocks';
 shim.angularMocks = {
 	deps: ['angular'],
 	exports: 'angular.mock'
