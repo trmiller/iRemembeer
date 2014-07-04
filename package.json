@@ -1,0 +1,40 @@
+{
+  "name": "iremembeer",
+  "version": "0.0.0",
+  "description": "app for beer lovers",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trmiller/iRemembeer.git"
+  },
+  "keywords": [
+    "iRemembeer",
+    "beer",
+    "remember"
+  ],
+  "author": "trmiller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trmiller/iRemembeer/issues"
+  },
+  "homepage": "https://github.com/trmiller/iRemembeer",
+  "dependencies": {
+    "express": "^4.4.5",
+    "logfmt": "^1.1.2",
+    "gulp": "^3.8.2",
+    "gulp-changed": "^0.4.0",
+    "gulp-clean": "^0.3.0",
+    "gulp-html-replace": "^1.1.0",
+    "gulp-karma": "^0.0.4",
+    "gulp-less": "^1.2.3",
+    "gulp-uglify": "^0.3.1",
+    "karma": "^0.12.16",
+    "karma-jasmine": "^0.1.5",
+    "karma-requirejs": "^0.2.2",
+    "less": "^1.7.3",
+    "requirejs": "^2.1.14"
+  }
+}

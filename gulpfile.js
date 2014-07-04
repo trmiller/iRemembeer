@@ -80,14 +80,14 @@ gulp.task('watch', function(){
 	gulp.watch('app/index.htmls', ['updatePathsInIndex.Html']);
 	gulp.watch('app/views/**/*', ['copySourceFilesToBuildFolder']);
 	gulp.watch('app/js/**/*.html', ['copySourceFilesToBuildFolder']);
-	gulp.watch('app/css/**/*.js', ['test-run', 'compileJS']);
+	gulp.watch('app/styles/**/*.js', ['test-run', 'compileJS']);
 	gulp.watch('test/**/*Tests.js', ['test-run']);
 });
 
 gulp.task('postCleanSteps', ['copySourceFilesToBuildFolder', 'compileJS', 'compileLess', 'updatePathsInIndex.Html']);
 
 gulp.task('build', ['clean'], function(){
-	gulp.run('test-run');
+	//gulp.run('test-run');
 	gulp.run('postCleanSteps');
 });
 
