@@ -1,12 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="all" href="css/main.css"/>
   <title>iRemembeer</title>
 </head>
 <body>
-  <div class="container" ng-app></div>
+  <div class="navbar navbar-inverse">
+	  <div class="container">
+	  	<div class="navbar-header">
+	  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"><button>
+	  			<span class="icon-bar"></span>
+	  			<span class="icon-bar"></span>
+	  			<span class="icon-bar"></span>
+	  		</button>
+	  		<a class="navbar-brand" href="#">iRemembeer</a>
+	  	</div>
+	  </div>
+  </div>
+  <div class="container" ng-view></div>
   <toaster-container toaster-options="('position-class': toaster-bottom-right')"></toaster-container>
   <div>iRemembeer<span app-version></span>
   <script src="js/main-compiled.js" data-main="js/main.js"></script>

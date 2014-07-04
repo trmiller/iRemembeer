@@ -77,7 +77,7 @@ gulp.task('copyJSFilesToBuildFolder', function(){
 
 gulp.task('watch', function(){
 	gulp.watch('app/styles/**/*.less', ['compileLess']);
-	gulp.watch('app/index.htmls', ['updatePathsInIndex.Html']);
+	gulp.watch('app/index.html', ['updatePathsInIndex.Html']);
 	gulp.watch('app/views/**/*', ['copySourceFilesToBuildFolder']);
 	gulp.watch('app/js/**/*.html', ['copySourceFilesToBuildFolder']);
 	gulp.watch('app/styles/**/*.js', ['test-run', 'compileJS']);
