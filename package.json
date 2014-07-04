@@ -42,6 +42,7 @@
     "requirejs": "^2.1.14"
   },
   "scripts":{
-    "install": "./node_modules/bower/bin/bower install; ./node_modules/gulp/bin/gulp prod"
+    "install": "./node_modules/bower/bin/bower install",
+    "postinstall": "./node_modules/gulp/bin/gulp prod"
   }
 }
