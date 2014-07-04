@@ -12,7 +12,7 @@ var requireConfig = {
 	  ngStrap: '../lib/angular-strap/dist/angular-strap',
 	  ngStrapTpl: '../lib/angular-strap/dist/angular-strap.tpl',
 	  loadingBar: '../lib/angular-loading-bar/build/loading-bar',
-	  toaster: '../lib/angularjs-toaster/toaster'
+	  toaster: '../lib/AngularJS-Toaster/toaster'
 	},
 	shim: {
 		jquery: {exports: ['jQuery', '$']},
