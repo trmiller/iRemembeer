@@ -4,8 +4,7 @@
   "description": "app for beer lovers",
   "main": "web.js",
   "scripts": {
-    "install": "./node_modules/bower/bin/bower install",
-    "postinstall": "./node_modules/gulp/bin/gulp prod"
+    "install": "./node_modules/bower/bin/bower install"
   },
   "config": {
     "unsafe-perm": true
