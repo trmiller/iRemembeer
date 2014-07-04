@@ -8,7 +8,19 @@
   ],
   "dependencies": {
     "angular": "latest",
+    "angular-animate": "latest",
+    "angular-bootstrap": "latest",
+    "angular-loading-bar": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest",
+    "angular-strap": "latest",
+    "AngularJS-Toaster": "latest",
+    "bootstrap": "latest",
+    "bootswatch": "latest",
+    "jquery": "latest",
     "requirejs": "latest",
-    "requirejs-domready": "latest"
+    "requirejs-domready": "latest",
+    "ui-bootstrap": "latest",
+    "underscore": "latest"
   }
 }
