@@ -4,7 +4,8 @@
   "description": "app for beer lovers",
   "main": "web.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "./node_modules/bower/bin/bower install",
+    "postinstall": "./node_modules/gulp/bin/gulp prod"
   },
   "config": {
     "unsafe-perm": true
@@ -28,7 +29,7 @@
     "bower": "^1.3.6",
     "express": "^4.4.5",
     "logfmt": "^1.1.2",
-    "gulp": "^3.8.2",
+    "gulp": "^3.8.5",
     "gulp-changed": "^0.4.0",
     "gulp-clean": "^0.3.0",
     "gulp-html-replace": "^1.1.0",
@@ -41,8 +42,7 @@
     "less": "^1.7.3",
     "requirejs": "^2.1.14"
   },
-  "scripts":{
-    "install": "./node_modules/bower/bin/bower install",
-    "postinstall": "./node_modules/gulp/bin/gulp prod"
+  "devDependencies": {
+    "gulp": "^3.8.5"
   }
 }
