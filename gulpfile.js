@@ -92,5 +92,6 @@ gulp.task('build', ['clean'], function(){
 });
 
 gulp.task('prod', ['initializeProdBuild', 'build']);
+gulp.task('heroku:prod', ['initializeProdBuild', 'build']);
 
 gulp.task('default', ['build', 'watch']);
