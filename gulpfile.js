@@ -21,7 +21,7 @@ gulp.task('compileJS', function(){
 		requireConfig.out = "build/js/main-compiled.js";
 		requireConfig.optimize = 'uglify2';
 	} else {
-		requireConfig.dir = "build/js";
+        requireConfig.out = "build/js/main-compiled.js";
 	}
 	rjs.optimize(requireConfig);
 });

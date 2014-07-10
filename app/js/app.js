@@ -1,6 +1,6 @@
 define([
 	'angular',
-	'filters',
+	//'filters',
 	'services',
 	'controllers',
 	'angularRoute',
@@ -15,7 +15,7 @@ define([
 		return angular.module('iRemembeerApp', [
 			'ngRoute',
 			'iRemembeerApp.controllers',
-			'iRemembeerApp.filters',
+			//'iRemembeerApp.filters',
 			'iRemembeerApp.services',
 			'ui.bootstrap',
 			'mgcrea.ngStrap.datepicker',

@@ -3,7 +3,7 @@ define(
 		'angular',
 		'controllers/BeerController'
 	],
-	function(angular){
+	function(angular, BeerController){
 		'use strict';
 
 		return angular.module('iRemembeerApp.controllers', [])

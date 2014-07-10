@@ -10,6 +10,6 @@ require([
 		'use strict';
 
 		angular.element().ready(function(){
-			angular.resumeBootstrap(app['name']);
+			angular.resumeBootstrap(app.name);
 		});
 	});
